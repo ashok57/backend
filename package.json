@@ -8,12 +8,21 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.6",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.11.1",
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashok57/backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashok57/backend/issues"
+  },
+  "homepage": "https://github.com/ashok57/backend#readme",
+  "description": ""
 }

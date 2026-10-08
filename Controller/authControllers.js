@@ -21,7 +21,7 @@ const userLogin = async (req, res) => {
         .json({ success: false, message: "invalid credentials" });
     }
 
-    const token = jwt.sign({ id: user._id }, "secretToken", {
+    const token = jwt.sign({ id: user._id }, process.env.SECRET, {
       expiresIn: "1d",
     });
 
@@ -67,6 +67,7 @@ const userRegistration = async (req, res) => {
         name: savedUser.name,
         email: savedUser.email,
         age: savedUser.age,
+        role: savedUser.role,
       },
     });
   } catch (e) {
@@ -78,7 +79,3 @@ const userRegistration = async (req, res) => {
 };
 
 module.exports = { userLogin, userRegistration };
-
-// middlewarw
-// env setup
-// course policy
